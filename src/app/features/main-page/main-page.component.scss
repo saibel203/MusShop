@@ -11,6 +11,7 @@ h1 {
     background: red;
     position: relative;
     isolation: isolate;
+    margin-bottom: 50px;
 
     &-image {
       position: absolute;
@@ -70,6 +71,56 @@ h1 {
         border: none;
         background-color: #B88E2F;
         cursor: pointer;
+      }
+    }
+  }
+
+  &__browse {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    text-align: center;
+    font-family: 'Poppins', 'Roboto', 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+
+      &-title {
+        font-weight: 700;
+        font-size: 40px;
+        color: #333;
+      }
+
+      &-subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        color: #666;
+      }
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 15px;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        &-image {
+          border-radius: 10px;
+        }
+
+        &-title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #333;
+        }
       }
     }
   }
